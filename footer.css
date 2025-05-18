@@ -1,0 +1,255 @@
+footer {
+    background-color: rgba(71, 166, 221, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    min-height: 200px;
+    font-weight: 700;
+}
+
+.footer-background {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-letters {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Grenze Gotisch', serif;
+    font-size: 15rem;
+    font-weight: 900;
+    color: gold;
+    opacity: 0.9;
+    letter-spacing: 2rem;
+    z-index: 1;
+    white-space: nowrap;
+
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: start;
+    
+}
+
+.contact-info {
+    color: #fff;
+    font-weight: 700;
+}
+
+.contact-info h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+    line-height: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-nav li {
+    margin: 0;
+    width: auto;
+    text-align: left;
+}
+
+.footer-link {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+.footer-link:hover {
+    color: gold;
+
+}
+
+.footer-logo {
+    height: 250px;
+    width: auto;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+   
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    align-self: start;
+}
+
+.footer-right .social-links {
+   
+    justify-content: flex-end;
+}
+
+.social-links {
+    display: flex;
+   
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.social-link:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 50%;
+    transform: scale(1.1);
+
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+        min-height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-letters {
+        font-size: 8rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right {
+        align-items: center;
+
+    }
+
+    .footer-logo {
+        height: 120px; 
+    }
+
+    .footer-right .social-links {
+        justify-content: center;
+    }
+
+    .footer-link {
+        font-size: 1.2rem;
+    }
+
+    .footer-nav ul {
+        gap: 8px;
+    }
+
+    .social-link {
+        width: 30px;
+        height: 30px;
+       
+    }
+
+    .social-links {
+        gap: 5px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-link {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+    }
+
+    .footer-nav ul {
+       align-items: center;
+       gap: 8px;
+    }
+
+    .footer-nav li {
+        
+        text-align: center;
+    }
+
+
+}

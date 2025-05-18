@@ -1,0 +1,233 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+   
+
+}
+
+
+.main-nav {
+    background-color: rgba(71, 166, 221, 0.9);
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    background-color: rgba(71, 166, 221, 0.9);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.hamburger-container {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    margin: 0 20px;
+}
+
+.nav-link {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    font-family: 'Dancing Script', cursive;
+}
+
+.nav-link:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 10px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        padding: 10px 0;
+        justify-content: flex-start;
+    }
+
+    .hamburger-container {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 101;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60vh;
+        background-color: rgba(71, 166, 221, 0.9);
+        flex-direction: column;
+        padding: 20px;
+        z-index: 1000;
+        justify-content: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: gold;
+        color: black;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1rem;
+        z-index: 1001;
+        transition: transform 0.3s ease;
+    }
+
+    .close-menu:hover {
+        transform: scale(1.1);
+    }
+
+    .social-links {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .social-link {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-nav li {
+        margen: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+
+    .main-nav li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link {
+        font-size: 1.4rem;
+        padding: 10px;
+        color: black;
+        display: block;
+    }
+
+    .nav-link:hover {
+        background-color: gold;
+    }
+
+     .contact-footer {
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+            .contact-footer h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact-footer p {
+                font-size: 0.9rem;
+
+            }
+}
