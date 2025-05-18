@@ -1,0 +1,371 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+   
+
+}
+
+
+header {
+    background-image: url('../images1/IMG_2871[1].jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+
+
+
+}
+
+.overlay {
+    border-image: fill 1 linear-gradient(rgba(255,255,255,0.4), rgba(0,0,0,0.6));
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+
+
+}
+
+
+nav {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+    
+
+}
+
+.nav-link {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+
+}
+
+.nav-link:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 10px;
+}
+
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after{
+    width: 80%;
+}
+
+.main-nav {
+    background-color: rgba(71, 166, 221, 0.9);
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.facebook-icon::before{
+    content: '';
+    font-weight: bold;
+}
+
+.youtube.icon::before{
+    content: ''
+
+}
+
+.main-nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    margin: 0 20px;
+}
+
+
+main {
+    color: #333;
+    padding: 20px;
+    height: auto;
+
+
+}
+
+
+
+.pdf1,
+.pdf2,
+.pdf3 {
+    text-decoration: none;
+    list-style: none;
+   
+
+}
+
+.pdf1 a,
+.pdf2 a,
+.pdf3 a {
+    text-decoration: overline dotted black;
+    color: hotpink;
+    
+}
+
+.pdf1 a:hover,
+.pdf2 a:hover,
+.pdf3 a:hover {
+    text-decoration: underline;
+
+
+}
+
+
+
+
+.about-card-one,
+.about-card-two,
+.about-card-three {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+margin-bottom: 100px;
+margin-left: 20px;
+margin-right: 20px;
+max-width: 95%;
+
+
+}
+
+
+
+
+.about-one,
+.about-two,
+.about-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+
+
+
+}
+
+article {
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    
+
+}
+
+article p {
+    font-size: larger;
+
+}
+
+figure {
+    margin: 0;
+
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+
+}
+
+.about-card-one article {
+    grid-column: 1;
+      background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+   
+}
+
+.about-card-one figure {
+    grid-column: 2;
+    
+}
+
+.about-card-two article {
+    grid-column: 2;
+      background: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+   
+}
+
+.about-card-two figure {
+    grid-column: 1;
+   
+}
+
+
+.about-card-three article {
+    grid-column: 1;
+      background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.about-card-three figure {
+    grid-column: 2;
+    
+}
+
+hr {
+border: none;
+border-top: 2px solid;
+color: #000;
+text-align: center;
+
+
+}
+
+hr::after {
+    display: inline-block;
+    position: relative;
+    content: 'The New Freedom Worship Center';
+    
+}
+
+.centered-image {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    position: relative;
+    border-top: #333 solid 10px;
+    border-bottom: #333 solid 10px;
+    background-color: rgba(71, 166, 221, 0.9);
+    border-radius: 5px;
+
+}
+
+.centered-image img{
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+
+}
+
+.centered-image figcaption {
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+   color: #fff;
+   background: rgba(255, 255, 255, 0.2);
+   padding: 5px 10px;
+   font-size: 2rem;
+   border-radius: 5px;
+   text-align: center;
+   width: 50%;
+   
+}
+
+
+
+
+@media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Stack vertically */
+                grid-template-rows: auto auto;
+            }
+
+            .row-1 article, .row-1 figure,
+            .row-2 article, .row-2 figure,
+            .row-3 article, .row-3 figure {
+                grid-column: 1;
+            }
+
+            .row-2 figure {
+                order: -1; /* Ensure image comes before text in row 2 */
+            }
+
+            .centered-image img {
+                max-width: 100%;
+            }
+        }

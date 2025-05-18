@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Page</title>
+    <link rel="icon" href="../images1/logo-image-final.png">
+    <link rel="stylesheet" href="worship.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body id="admin-page">
+    <main>
+    <div class="login-panel active" id="loginPanel">
+        <h2>Admin Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="togglePasswordBtn" onclick="togglePasswordVisibility()">Show Password</button>
+        <button onclick="handleLogin()">Login</button>
+
+    </div>
+    <div class="admin-panel" id="adminPanel">
+        <h2>Admin Panel</h2>
+        <textarea id="agendaInput" placeholder="Weekly Agenda"></textarea>
+        <textarea id="eventsInput" placeholder="Upcoming Events"></textarea>
+        <textarea id="messageBoardInput" placeholder="MessageBoard"></textarea>
+        <textarea id="verseInput" placeholder="Verse of the Week"></textarea>
+        <input type="text" id="youtubeUrl" placeholder="YouTube URL (Copy & Paste entire URL)(optional)">
+        <input type="file" id="videoUpload" accept="video/*">
+        <button onclick="saveContent()">Save</button>
+        <button onclick="logout()">Logout</button>
+
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
