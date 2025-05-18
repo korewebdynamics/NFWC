@@ -351,7 +351,7 @@ hr::after {
 
 @media (max-width: 768px) {
             .grid-container {
-                grid-template-columns: 1fr; /* Stack vertically */
+                grid-template-columns: 1fr; 
                 grid-template-rows: auto auto;
             }
 
@@ -362,7 +362,7 @@ hr::after {
             }
 
             .row-2 figure {
-                order: -1; /* Ensure image comes before text in row 2 */
+                order: -1; 
             }
 
             .centered-image img {

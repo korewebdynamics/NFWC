@@ -327,13 +327,6 @@ main {
     display: block;
 }
 
-.agenda,
-.events,
-.message-board,
-.verse-section,
-.picture-text {
-    
-}
 
 .verse-section {
     background: gold;
@@ -710,11 +703,11 @@ border-radius: 10px;
 
 @media (max-width: 768px) {
     header {
-        height: 60vh; /* Shorter header */
+        height: 60vh; 
     }
 
     .welcome-text {
-        font-size: 1.5rem; /* Smaller header text */
+        font-size: 1.5rem; 
     }
 
     .read-more-btn {
@@ -845,7 +838,7 @@ border-radius: 10px;
 
     .content-card img {
         max-width: 100%;
-        max-height: 300px; /* Shrink content images */
+        max-height: 300px; 
     }
 
     .video-section {
@@ -854,7 +847,7 @@ border-radius: 10px;
 
     .video-section iframe,
     .video-section video {
-        height: 30vh; /* Smaller video height */
+        height: 30vh; 
     }
 
     .video-section figcaption {
@@ -863,7 +856,7 @@ border-radius: 10px;
 
     .inline-image img {
         max-width: 100%;
-        max-height: 250px; /* Shrink inline images */
+        max-height: 250px; 
     }
 
     .content-row.gallery {
@@ -873,12 +866,12 @@ border-radius: 10px;
 
     .content-row.gallery img {
         max-width: 100%;
-        max-height: 200px; /* Shrink gallery images */
+        max-height: 200px; 
     }
 
     .banner-container img {
         max-width: 100%;
-        max-height: 300px; /* Shrink banner image */
+        max-height: 300px; 
     }
 
     .banner-text {
@@ -904,12 +897,12 @@ border-radius: 10px;
 
     #logo-section img {
         max-width: 80%;
-        max-height: 150px; /* Shrink logo image */
+        max-height: 150px; 
     }
 
     .vertical-text-left,
     .vertical-text-right {
-        display: none; /* Hide vertical text on mobile */
+        display: none; 
     }
 
     footer {
