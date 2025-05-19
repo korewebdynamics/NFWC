@@ -18,13 +18,85 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
+    font-family: 'Dancing Script', cursive;
 }
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
+
+nav {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.nav-link {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    font-family: 'Dancing Script', cursive;
+    
+
+}
+
+.nav-link:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 10px;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    width: 90%;
+}
+
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after{
+    width: 80%;
+}
+
+
 
 .nav-menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .hamburger {
@@ -48,14 +120,17 @@
 
 .social-links {
     display: flex;
-    align-items: center;
-    margin-left: 30px;
+   justify-content: flex-start;
+   gap: 15px;
+   margin-right: 0px;
+   margin-left: 20px;
+
 }
 
 .social-link {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 40px;
     height: 40px;
     margin-right: 10px;
@@ -77,10 +152,21 @@
 
 .main-nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 90%;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    width: 90%;
 }
 
 .main-nav li {
@@ -116,6 +202,16 @@
 
 .nav-link:hover::after {
     width: 80%;
+}
+
+header {
+    background-image: url('../images1/IMG_2854[1].jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+
 }
 
 @media (max-width: 768px) {

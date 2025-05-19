@@ -168,7 +168,7 @@ color: transparent;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
      font-family: 'Dancing Script', cursive;
 
@@ -176,17 +176,20 @@ color: transparent;
 
 .social-links {
     display: flex;
-    align-items: center;
-    margin-left: 30px;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .social-link {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 40px;
     height: 40px;
     margin-right: 10px;
+    margin-left: 20px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -215,10 +218,11 @@ color: transparent;
 
 .main-nav ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 90%;
 }
 
 .main-nav li {
@@ -228,6 +232,18 @@ color: transparent;
 .nav-menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    width: 90%;
 }
 
 .hamburger {

@@ -67,12 +67,23 @@ nav {
     position: relative;
     transition: background-color 0.3s ease;
     font-family: 'Dancing Script', cursive;
+    
 
 }
 
 .nav-link:hover {
     background-color: rgba(173, 216, 230, 0.5);
     border-radius: 10px;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    width: 90%;
 }
 
 
@@ -100,14 +111,17 @@ nav {
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
+    font-family: 'Dancing Script', cursive;
 
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .hamburger {
@@ -133,8 +147,10 @@ nav {
 
 .social-links {
     display: flex;
-    align-items: center;
-    margin-left: 30px;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-right: 0px;
+    margin-left: 20px;
 }
 
 .social-link {
@@ -172,10 +188,11 @@ nav {
 
 .main-nav ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 90%;
 }
 
 .main-nav li {
@@ -347,7 +364,7 @@ hr::after {
     position: relative;
     border-top: #333 solid 10px;
     border-bottom: #333 solid 10px;
-    background-color: gold;
+    background-color: rgba(71, 166, 221, 0.9);
     border-radius: 5px;
 
 }
@@ -439,7 +456,7 @@ hr::after {
                 display: flex;
             }
 
-            .close-menu {
+            .clost-menu {
                 display: block;
                 position: absolute;
                 top: 20px;
@@ -547,7 +564,7 @@ hr::after {
             .contact-footer p {
                 font-size: 0.9rem;
 
-            }
+                
 
 
 
